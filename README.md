@@ -7,7 +7,7 @@ Week 1:
   - Configure Continuous Integration/Continuous Delivery
   - Setup Github repository✔️
   - Write unit tests for authorization module
-  - Create basic UI for login with Google
+  - Create basic UI for login with Google✔️
 
 Week 2:
   - Implement feature: Welcome message on successful registration or first sign-in with Google Account
