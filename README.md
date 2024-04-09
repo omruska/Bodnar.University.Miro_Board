@@ -17,14 +17,14 @@ Week 2:
   - Conduct initial testing for authentication and welcome message functionality
 
 Week 3:
-  - Implement feature: Virtual Whiteboard creation and editing
+  - Implement feature: Virtual Whiteboard creation and editing✔️
   - Write unit tests for whiteboard creation and editing
   - Develop backend API endpoints for whiteboard operations
   - Integrate frontend with backend for whiteboard functionality
   - Test whiteboard creation and editing in various scenarios
 
 Week 4:
-  - Implement feature: Sticky Notes functionality
+  - Implement feature: Sticky Notes functionality✔️
   - Write unit tests for sticky notes
   - Implement frontend components for adding and editing sticky notes
   - Integrate sticky notes with the whiteboard interface
