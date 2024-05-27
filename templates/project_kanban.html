@@ -1,0 +1,46 @@
+<!-- project_kanban.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Kanban Board</h1>
+        <label for="newTaskInput">New Task:</label>
+        <input type="text" id="newTaskInput" placeholder="Enter a new task...">
+        <button type="submit" id="addTaskButton">Add Task</button>
+        <a href="/"><button>Back to Home</button></a>
+    </header>
+    <main>
+        <div id="board">
+            <div class="column" id="todo">
+                <h2>To Do</h2>
+                <!-- Modified task element with description -->
+                <div class="task" draggable="true">
+                    <div class="task-content">Task 1</div>
+                    <div class="task-description" style="display: none;">Description for Task 1</div>
+                </div>
+                <div class="task" draggable="true">
+                    <div class="task-content">Task 2</div>
+                    <div class="task-description" style="display: none;">Description for Task 2</div>
+                </div>
+            </div>
+            <div class="column" id="in-progress">
+                <h2>In Progress</h2>
+            </div>
+            <div class="column" id="done">
+                <h2>Done</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Miro Board Site. All rights reserved.</p>
+    </footer>
+    <script src="../static/kanban.js"></script>
+</body>
+</html>
