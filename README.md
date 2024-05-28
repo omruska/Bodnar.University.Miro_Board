@@ -85,3 +85,7 @@ Week 12:
   - Develop UI components for creating and using custom templates
   - Integrate template management with the whiteboard interface
   - Test custom templates with different project scenarios and configurations
+
+  Anti-Lab 2
+  Katsuba Mariia
+  https://github.com/omruska/Katsuba.University.Netflix
