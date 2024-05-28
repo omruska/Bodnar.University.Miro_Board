@@ -89,3 +89,4 @@ Week 12:
   Anti-Lab 2
   Katsuba Mariia
   https://github.com/omruska/Katsuba.University.Netflix
+  https://github.com/omruska/Bodnar.University.Miro_Board/pull/1
