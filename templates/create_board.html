@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Board</title>
+    <style>
+        body {
+            display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2e2e;
+}
+
+header {
+    background-color: #20B2AA;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+button {
+    background-color: #2e2e2e; /* Black tone for button background */
+    border: none;
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #008B8B;
+}
+
+main {
+    flex: 1; /* Allow the main content to grow to fill the remaining space */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    padding: 20px;
+}
+
+form {
+    width: 400px; /* Set the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #2e2e2e; /* Black tone for button background */
+    border: none;
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #008B8B;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Create New Board</h1>
+        <a href="/"><button>Back to Home</button></a>
+    </header>
+    <main>
+        <form action="/create_board" method="post">
+            <label for="board_name">Board Name:</label><br>
+            <input type="text" id="board_name" name="board_name"><br><br>
+
+            <label for="board_type">Select Board Type:</label><br>
+            <select id="board_type" name="board_type">
+                <option value="whiteboard">Whiteboard</option>
+                <option value="kanban">Kanban Board</option>
+                <option value="mindmap">Mind Map</option>
+            </select><br><br>
+
+            <input type="submit" value="Create Board">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Miro Board Site. All rights reserved.</p>
+    </footer>
+</body>
+</html>

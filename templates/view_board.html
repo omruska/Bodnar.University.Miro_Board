@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        canvas {
+            display: block;
+            background-color: #fff;
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+            cursor: pointer;
+        }
+
+        .toolbar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            z-index: 1; /* Ensure toolbar is above canvas */
+        }
+
+        .toolbar button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <button id="addTextButton">Add Text</button>
+        <button id="addStickyNoteButton">Add Sticky Note</button>
+        <button id="addRectangleButton">Add Rectangle</button>
+        <button id="addCircleButton">Add Circle</button>
+    </div>
+
+    <canvas id="whiteboard"></canvas>
+
+    <script src="../static/whiteboard.js"></script>
+</body>
+</html>
